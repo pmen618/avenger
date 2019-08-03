@@ -68,7 +68,8 @@ $('#shop').click(function(event){
     $intro.hide();
     $slide.hide();
     $gallery.hide();
-    $shop.show("fast");
+    $shop.show("fast").css({"min-height": "500px", "opacity": "1"});
+    $('a#shop').removeClass("active");
 });
 //.main-nav
 
@@ -214,7 +215,7 @@ $('.slider-thumb').slick({
   focusOnSelect: true
 });
 /*******Add to wishList************/
-$("a#add-to-wishList").click(function() {
+$("a.add-to-wishList").click(function() {
   console.log("classname - " + this.className)
   if(this.className=="" || this.className == "remove")
       this.className = "add";
@@ -231,4 +232,11 @@ $(document).on('mousemove', function(e) {
     'top': yPos,
     'left': xPos
   });
+});
+
+/*******MENU ******/
+$(".menu-mobile").click(function() {
+  $("ul.nav-inner").toggleClass("menu");
+  $(".navbar-inner").toggleClass("nav-bg");
+  $(this).toggleClass("open");
 });
