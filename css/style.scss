@@ -1859,7 +1859,7 @@ $res_1107 : "only screen and (min-width: 1107px)";
 @media only screen and (max-width: 1024px)
 {
 	.section{
-		min-height: 450px;
+		min-height: 450px !important;
 	}
 	#shopping{
 		min-height: 450px !important;
@@ -2205,7 +2205,7 @@ $res_1107 : "only screen and (min-width: 1107px)";
 	    padding: 30px;
 	}
 	#slide {
-    	min-height: 2000px;}
+    	min-height: 450px;}
     .squares > div {
 	    width: auto;
 	    height: auto;
@@ -2365,12 +2365,12 @@ $res_1107 : "only screen and (min-width: 1107px)";
 	    width: 55%;
 	}
 	.int-right img {
-    width: 110%;
-    height: 85%;
-}
-.int-left {
-    padding-top: 50%;
-}
+	    width: 110%;
+	    height: 85%;
+	}
+	.int-left {
+	    padding-top: 50%;
+	}
 	.squares {
 	    padding: 30px 20px;
 	}
@@ -2400,10 +2400,26 @@ $res_1107 : "only screen and (min-width: 1107px)";
 	}
 }
 @media only screen  and (max-width: 375px){
+	#slide{
+		min-height: 450px;
+	}
 	.int-left {
-	    padding-top: 30%;
+	    padding-top: 100%;
 	}
 	.hero .inner .heading {
-    font-size: 1.5rem;
-}
+    	font-size: 1.5rem;
+    	}
+    .squares{
+    	padding: 0;
+    }
+    .squares .story {
+	    padding: 50px 20px 80px 20px;
+	}
+	.info-detail {
+	    padding-left: 20px;
+	}
+	.squares .info-detail .des p {
+	    font-size: 13px;
+	}
+
 }
