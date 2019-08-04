@@ -1511,7 +1511,7 @@ p.glitched {
 
   /* WRAPPER */
   .wrapper {
-    overflow: unset;
+    overflow: hidden;
     height: auto;
     min-height: auto; }
 
