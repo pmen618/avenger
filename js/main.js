@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function(e){
         $intro.hide();
         $slide.hide();
         $gallery.hide();
-        $shop.show("fast").css({"min-height":"550px","opacity": "1"});
+        $shop.show("fast").css({"opacity":"1","min-height":"550px"});
         $('a#shop').removeClass("active");
     });
     //.main-nav

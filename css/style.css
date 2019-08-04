@@ -51,11 +51,18 @@ a {
   z-index: 99999;
   height: 100%;
   position: fixed;
+  overflow: hidden;
   background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%); }
   .doc-loader img {
     width: 150px; }
   .doc-loader h1 {
-    font-size: 92px; }
+    font-size: 92px;
+    animation: appear 0.6s ease-in-out; }
+@keyframes appear {
+  from {
+    transform: translate3d(0%, -50%, 0); }
+  to {
+    transform: translate3d(0%, 0%, 0); } }
   .doc-loader .start button {
     color: #6b6b6b;
     position: relative;
@@ -66,9 +73,10 @@ a {
     border-radius: 30px;
     transition: 0.3s all;
     box-shadow: 0px 4px 7px 0px #fee2a09c; }
-    .doc-loader .start button:hover {
+    .doc-loader .start button:hover, .doc-loader .start button:focus {
       color: #333;
-      box-shadow: none; }
+      box-shadow: none;
+      outline: none; }
 
 /* ============================ WRAPPER ==========================*/
 .wrapper {
