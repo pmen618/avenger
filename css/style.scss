@@ -14,13 +14,11 @@ $floatRight:right;
 body {
 	margin:0;
 	font-family: $font-family;
-		background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+	background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
 	padding: 0;
 	background-repeat: no-repeat;
     background-size: cover;
-    
 	overflow: hidden;
-
 }
 
 ::-webkit-scrollbar {
@@ -59,12 +57,6 @@ a{
 @mixin float($float){
 	float: $float;
 }
-@mixin display($display){
-	display: $display;
-}
-@mixin line($width){
-	width:$width;
-}
 @mixin background(){
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -82,12 +74,7 @@ a{
 .clear{
     clear: both;
 }
-.unvisible{
-	@include display(none);
-}
-.visible{
-	@include display(block);
-}
+
 /* ============================ LOADING ===========================*/
 .doc-loader {
     display: flex;
@@ -99,9 +86,7 @@ a{
     z-index: 99999;
     height: 100%;
     position: fixed;
-    background-image: url('../img/background.jpg');
-
-    background-color: $bg-color;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
     img {
 	    width: 150px;
 	    
@@ -290,82 +275,6 @@ a{
 	55%, 85%{top: 14px;}
 	90%, 100% {top: 18px;}
 }
-@keyframes flip{
-	0%, 3% {transform: rotate(-0deg);}
-	
-	40%, 43%{transform: rotate(-25deg);}
-	
-}
-@keyframes animate {
-    0% {
-        background-position: 0;
-    }
-    100% {
-        background-position: 1360px;
-    }
-}
-
-@-webkit-keyframes animate {
-    0% {
-        background-position: 0;
-    }
-    100% {
-        background-position: 1360px;
-    }
-}
-
-@-moz-keyframes animate {
-    0% {
-        background-position: 0;
-    }
-    100% {
-        background-position: 1360px;
-    }
-}
-
-@-o-keyframes animate {
-    0% {
-        background-position: 0;
-    }
-    100% {
-        background-position: 1360px;
-    }
-}
-@keyframes animate-reverse {
-    0% {
-        background-position: 1360px;
-    }
-    100% {
-        background-position: 0;
-    }
-}
-
-@-webkit-keyframes animate-reverse {
-    0% {
-        background-position: 1360px;
-    }
-    100% {
-        background-position: 0;
-    }
-}
-
-@-moz-keyframes animate-reverse {
-    0% {
-        background-position: 1360px;
-    }
-    100% {
-        background-position: 0;
-    }
-}
-
-@-o-keyframes animate-reverse {
-    0% {
-        background-position: 1360px;
-    }
-    100% {
-        background-position: 0;
-    }
-}
 
 }
 .before-after{
@@ -414,10 +323,7 @@ a{
 	    	li{
 	    		margin-left: 30px;
 		    	display: inline-block;
-	    	&.line {
-			    border: 1px solid #000;
-			    @include line(156px);
-			}
+	    	
 	    	a{
 		    	color:$color-second;
 		    	font-size: $font-3;
