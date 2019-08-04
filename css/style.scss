@@ -2251,8 +2251,9 @@ $res_1107 : "only screen and (min-width: 1107px)";
 	}
 	.squares .story .story-des p {
 	    width: 80%;
-	    font-size: 16px;
+	    font-size: 14px;
 	    margin-bottom: 50px;
+	    letter-spacing: 0;
 	}
 	.carousel-indicators {
 	    bottom: 20px;
@@ -2375,6 +2376,16 @@ $res_1107 : "only screen and (min-width: 1107px)";
 	.squares {
 	    padding: 30px 20px;
 	}
+	.squares .info-detail .actor h2{
+		font-size: 13px !important;
+	}
+	.squares .info-detail .name h1 {
+	    font-size: 1.5rem;
+	}
+	.squares .info-detail .des {
+	    width: 90%;
+	    padding-bottom: 50px;
+	}
 	#shopping .slider-content .pd-right{
 		margin: 20px auto;
 	}
@@ -2422,5 +2433,7 @@ $res_1107 : "only screen and (min-width: 1107px)";
 	.squares .info-detail .des p {
 	    font-size: 13px;
 	}
-
+	.carousel-indicators{
+		right: -70px;
+	}
 }
